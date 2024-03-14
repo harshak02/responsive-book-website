@@ -35,8 +35,44 @@ if (loginClose) {
 /*=============== ADD SHADOW HEADER ===============*/
 
 /*=============== HOME SWIPER ===============*/
+let swiperHome = new Swiper(".home__swiper", {
+  loop: true,
+  spaceBetween: -24,
+  grabCursor: true,
+  slidesPerView: "auto",
+  centeredSlides: "auto",
 
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  breakpoints: {
+    1220: {
+      spaceBetween: -32,
+    },
+  },
+});
 /*=============== FEATURED SWIPER ===============*/
+let swiperFeatured = new Swiper(".featured__swiper", {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+  slidesPerView: "auto",
+  centeredSlides: "auto",
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    1150: {
+      slidesPerView: 4,
+      centeredSlides: false,
+    },
+  },
+});
 
 /*=============== NEW SWIPER ===============*/
 
